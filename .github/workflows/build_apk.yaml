@@ -28,12 +28,12 @@ jobs:
 
       - name: Instalar dependencias
         run: |
-          cd frontend
+          cd Infog
           flutter pub get
 
       - name: Compilar APK en modo Release
         run: |
-          cd frontend
+          cd Infog
           flutter build apk --release
 
       - name: Subir el APK como artefacto descargable
