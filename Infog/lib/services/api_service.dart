@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  static const String baseUrl = 'http://192.168.0.11:3000/api';
+  static const String baseUrl = 'https://infog.onrender.com/api';
 
   static Future<List<dynamic>> getInstituciones(String languageCode) async {
     final response = await http.get(
